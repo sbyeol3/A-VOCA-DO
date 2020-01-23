@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveBoa : MonoBehaviour
+public class S1MoveBoa : MonoBehaviour
 {
     public Transform target;
     private float speed = 10.0f;
@@ -16,6 +16,7 @@ public class MoveBoa : MonoBehaviour
     void Start()
     {
         transform.position = Vector3.Lerp(transform.position, tarPos, speed * Time.deltaTime);
+        Debug.Log("AWAKE");
     }
 
     // Update is called once per frame
