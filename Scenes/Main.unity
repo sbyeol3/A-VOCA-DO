@@ -198,7 +198,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD:Scenes/Scene6.unity
   - {fileID: 23134066}
+=======
+  - {fileID: 47506186}
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -226,7 +230,11 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40919614}
+<<<<<<< HEAD:Scenes/Scene6.unity
   m_Mesh: {fileID: 603615297}
+=======
+  m_Mesh: {fileID: 1860833905}
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
 --- !u!114 &40919618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +292,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &47506186
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'background6Material
+
+    24602'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: afae697abad44b59966b0a82c9c9b117, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +333,7 @@ GameObject:
   - component: {fileID: 223974228}
   - component: {fileID: 223974227}
   m_Layer: 0
-  m_Name: boa
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,6 +682,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+<<<<<<< HEAD:Scenes/Scene6.unity
 --- !u!43 &603615297
 Mesh:
   m_ObjectHideFlags: 0
@@ -809,6 +846,8 @@ Mesh:
     offset: 0
     size: 0
     path: 
+=======
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
 --- !u!1 &1291207076
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,13 +952,21 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD:Scenes/Scene6.unity
 --- !u!43 &1334738267
+=======
+--- !u!43 &1860833905
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Scenes/Scene6.unity
   m_Name: ImageTargetMesh14880
+=======
+  m_Name: ImageTargetMesh24594
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1065,7 +1112,11 @@ Mesh:
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Scenes/Scene6.unity
     m_Extent: {x: 0.5, y: 0, z: 0.5}
+=======
+    m_Extent: {x: 0.5, y: 0, z: 0.28111}
+>>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
