@@ -1,27 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
 public class S1MoveBoa : MonoBehaviour
 {
-    public Transform target;
-    private float speed = 10.0f;
-    private Vector3 tarPos = new Vector3(0.31f, -1.14f, -0.55f);
+    private TrackableBehaviour mTrackableBehaviour;
+    public GameObject boa;
 
-    void Awake()
-    {
-        target.transform.position = new Vector3(-1.29f, -1.36f, -0.55f); // pos 초기화
+    void Start(){
+        boa.SetActive(false);
     }
 
-    void Start()
-    {
-        transform.position = Vector3.Lerp(transform.position, tarPos, speed * Time.deltaTime);
-        Debug.Log("AWAKE");
-    }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public IEnumerator MoveBoa()
+    {
+        boa.SetActive(true);
+
+        boa.transform.localPosition = new Vector3(-0.32f, 0.136f, 0.02);
     }
 }

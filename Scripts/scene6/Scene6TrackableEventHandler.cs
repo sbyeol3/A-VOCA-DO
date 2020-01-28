@@ -4,18 +4,21 @@ using UnityEngine;
 using UnityEngine.Events;
 using Vuforia;
 
-
-public class S1DefaultHandler : DefaultTrackableEventHandler
+public class Scene6TrackableEventHandler : DefaultTrackableEventHandler
 {
-    public S1MoveBoa scene1;
+
+    public Scene6 scene6;
+    // Start is called before the first frame update
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
-        StartCoroutine(scene1.MoveBoa());
+        StartCoroutine(scene6.boa_set());
+        Debug.Log("found");
     }
 
     override protected void OnTrackingLost()
     {
         base.OnTrackingLost();
     }
+
 }
