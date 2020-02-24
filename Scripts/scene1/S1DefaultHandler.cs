@@ -7,15 +7,54 @@ using Vuforia;
 
 public class S1DefaultHandler : DefaultTrackableEventHandler
 {
-    public S1MoveBoa scene1;
     override protected void OnTrackingFound()
     {
-        base.OnTrackingFound();
-        StartCoroutine(scene1.MoveBoa());
+        if (mTrackableBehaviour)
+        {
+            var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
+            var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
+            var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
+
+            // Enable rendering:
+            foreach (var component in rendererComponents)
+                component.enabled = true;
+
+            // Enable colliders:
+            foreach (var component in colliderComponents)
+                component.enabled = true;
+
+            // Enable canvas':
+            foreach (var component in canvasComponents)
+                component.enabled = true;
+        }
+
+        if (OnTargetFound != null)
+            OnTargetFound.Invoke();
+      
     }
 
     override protected void OnTrackingLost()
     {
-        base.OnTrackingLost();
+        if (mTrackableBehaviour)
+        {
+            var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
+            var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
+            var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
+
+            // Disable rendering:
+            foreach (var component in rendererComponents)
+                component.enabled = false;
+
+            // Disable colliders:
+            foreach (var component in colliderComponents)
+                component.enabled = false;
+
+            // Disable canvas':
+            foreach (var component in canvasComponents)
+                component.enabled = false;
+        }
+
+        if (OnTargetLost != null)
+            OnTargetLost.Invoke();
     }
 }

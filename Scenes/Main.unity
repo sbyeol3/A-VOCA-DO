@@ -198,11 +198,15 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
   - {fileID: 23134066}
 =======
   - {fileID: 47506186}
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+  - {fileID: 47506186}
+>>>>>>> origin/master:Scenes/Scene6.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -230,11 +234,15 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40919614}
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
   m_Mesh: {fileID: 603615297}
 =======
   m_Mesh: {fileID: 1860833905}
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+  m_Mesh: {fileID: 1860833905}
+>>>>>>> origin/master:Scenes/Scene6.unity
 --- !u!114 &40919618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +690,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
 --- !u!43 &603615297
 Mesh:
@@ -848,6 +857,8 @@ Mesh:
     path: 
 =======
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+>>>>>>> origin/master:Scenes/Scene6.unity
 --- !u!1 &1291207076
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,21 +963,29 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
 --- !u!43 &1334738267
 =======
 --- !u!43 &1860833905
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+--- !u!43 &1860833905
+>>>>>>> origin/master:Scenes/Scene6.unity
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
   m_Name: ImageTargetMesh14880
 =======
   m_Name: ImageTargetMesh24594
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+  m_Name: ImageTargetMesh24594
+>>>>>>> origin/master:Scenes/Scene6.unity
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1112,11 +1131,15 @@ Mesh:
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Scenes/Main.unity
 <<<<<<< HEAD:Scenes/Scene6.unity
     m_Extent: {x: 0.5, y: 0, z: 0.5}
 =======
     m_Extent: {x: 0.5, y: 0, z: 0.28111}
 >>>>>>> 8a65d051b48a33a397ee737b0b65a74ddeb375a8:Scenes/Main.unity
+=======
+    m_Extent: {x: 0.5, y: 0, z: 0.28111}
+>>>>>>> origin/master:Scenes/Scene6.unity
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 

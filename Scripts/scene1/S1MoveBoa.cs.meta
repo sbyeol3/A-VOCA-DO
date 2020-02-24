@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5cce387abfd2b2d4d92cde0a6d64591f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - target: {instanceID: 0}
+  - talking1Sound: {fileID: 8300000, guid: 6fb6d534eb4b57843a616d3102670fca, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
