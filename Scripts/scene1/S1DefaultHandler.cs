@@ -7,10 +7,12 @@ using Vuforia;
 
 public class S1DefaultHandler : DefaultTrackableEventHandler
 {
+    public S1MoveBoa s1move;
     override protected void OnTrackingFound()
     {
         if (mTrackableBehaviour)
         {
+            Debug.Log("detect");
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
@@ -26,6 +28,8 @@ public class S1DefaultHandler : DefaultTrackableEventHandler
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+
+            StartCoroutine(s1move.InitBoa());
         }
 
         if (OnTargetFound != null)
