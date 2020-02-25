@@ -12,15 +12,15 @@ public class Scene6TrackableEventHandler : DefaultTrackableEventHandler
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
-        StartCoroutine(scene6.boa_set());
+        //StartCoroutine(scene6.boa_set());
         Debug.Log("found");
-        scene6.isBgFound = true;
+        Scene6.isBgFound = true;
     }
 
     override protected void OnTrackingLost()
     {
-        base.OnTrackingLost();
-        scene6.isBridgeFound = false;
+        //base.OnTrackingLost();
+        Scene6.isBgFound = false;
     }
 
 }

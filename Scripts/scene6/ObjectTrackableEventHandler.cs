@@ -12,7 +12,7 @@ public class ObjectTrackableEventHandler : DefaultTrackableEventHandler
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
-        scene6.isBridgeFound = true;
+        Scene6.isBridgeFound = true;
         //scene6.boa_clear();
         Debug.Log("clear");
         
@@ -21,7 +21,7 @@ public class ObjectTrackableEventHandler : DefaultTrackableEventHandler
     override protected void OnTrackingLost()
     {
         base.OnTrackingLost();
-        scene6.isBridgeFound = false;
+        Scene6.isBridgeFound = false;
     }
 
 }

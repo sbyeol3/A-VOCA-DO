@@ -6,9 +6,7 @@ public class S1MoveBoa : MonoBehaviour
 {
     public Transform target;
     public GameObject boa;
-    private float speed = 2.0f;
-    //private Vector3 tarPos = new Vector3(0.32f, 0.1f, -0.16f);
-    private Vector3 closet = new Vector3(0.273f, 0.18f, -0.16f);
+    public Animator walk;
 
     private AudioSource audioFile;
     public AudioClip talking1Sound; // 보아가 말하는 소리
@@ -19,21 +17,11 @@ public class S1MoveBoa : MonoBehaviour
         
     }
 
-    void Start()
-    {
-
-       
-    }
-
-    void Update()
-    {
-
-    }
 
     public IEnumerator InitBoa()
     {
         boa.SetActive(true);
-        target.transform.localPosition = new Vector3(-0.3f, 0.068f, 0.13f); // pos 초기화
+        target.transform.localPosition = new Vector3(-0.084f, 0.013f, -0.0138f); // pos 초기화
         Debug.Log("초기화");
         Debug.Log(boa.transform.localPosition);
         this.audioFile = this.gameObject.AddComponent<AudioSource>();
@@ -41,20 +29,22 @@ public class S1MoveBoa : MonoBehaviour
         this.audioFile.loop = false;
 
         //Vector3 tarPos = boa.transform.localPosition + new Vector3(1.0f, 0, -0.2f);
-        for(int i = 0;i < 20; i++){
-            boa.transform.localPosition = boa.transform.localPosition + new Vector3(0.03f, 0, -0.005f);
+        // 0.337 0.013 -0.138
+        walk.SetBool("isWalk", true);
+        for (int i = 0;i < 100; i++){
+            boa.transform.localPosition = boa.transform.localPosition + new Vector3(0.004f, 0, 0f);
             Debug.Log(boa.transform.localPosition);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
+        walk.SetBool("isWalk", false);
         //transform.localPosition = Vector3.Lerp(transform.position, tarPos, speed * Time.deltaTime);
         Debug.Log(boa.transform.localPosition);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2.0f);
+        StartCoroutine("MoveToCloset");
     }
 
     public IEnumerator MoveToCloset() // 신발장으로 이동
     {
-        Debug.Log("코루틴 Move");
-        //transform.localPosition = Vector3.Lerp(transform.position, closet, speed * Time.deltaTime);
         this.audioFile.Play();
         yield return new WaitForSeconds(2.0f);
     }
