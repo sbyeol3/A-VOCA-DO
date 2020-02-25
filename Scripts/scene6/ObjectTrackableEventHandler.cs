@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Vuforia;
 
-public class Scene6TrackableEventHandler : DefaultTrackableEventHandler
+public class ObjectTrackableEventHandler : DefaultTrackableEventHandler
 {
 
     public Scene6 scene6;
@@ -12,15 +12,16 @@ public class Scene6TrackableEventHandler : DefaultTrackableEventHandler
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
-        //StartCoroutine(scene6.boa_set());
-        Debug.Log("found");
-        Scene6.isBgFound = true;
+        Scene6.isBridgeFound = true;
+        //scene6.boa_clear();
+        Debug.Log("clear");
+        
     }
 
     override protected void OnTrackingLost()
     {
-        //base.OnTrackingLost();
-        Scene6.isBgFound = false;
+        base.OnTrackingLost();
+        Scene6.isBridgeFound = false;
     }
 
 }
