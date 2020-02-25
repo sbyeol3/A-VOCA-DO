@@ -10,31 +10,34 @@ public class S1DefaultHandler : DefaultTrackableEventHandler
     public S1MoveBoa s1move;
     override protected void OnTrackingFound()
     {
-        if (mTrackableBehaviour)
-        {
-            Debug.Log("detect");
-            var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
-            var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
-            var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
+        base.OnTrackingFound();
+        StartCoroutine(s1move.InitBoa());
+        /*        if (mTrackableBehaviour)
+                {
+                    Debug.Log("detect");
+                    var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
+                    var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
+                    var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
 
-            // Enable rendering:
-            foreach (var component in rendererComponents)
-                component.enabled = true;
+                    // Enable rendering:
+                    foreach (var component in rendererComponents)
+                        component.enabled = true;
 
-            // Enable colliders:
-            foreach (var component in colliderComponents)
-                component.enabled = true;
+                    // Enable colliders:
+                    foreach (var component in colliderComponents)
+                        component.enabled = true;
 
-            // Enable canvas':
-            foreach (var component in canvasComponents)
-                component.enabled = true;
+                    // Enable canvas':
+                    foreach (var component in canvasComponents)
+                        component.enabled = true;
 
-            StartCoroutine(s1move.InitBoa());
-        }
+                    StartCoroutine(s1move.InitBoa());
+                    Debug.Log("코루틴 종료");
+                }
 
-        if (OnTargetFound != null)
-            OnTargetFound.Invoke();
-      
+                if (OnTargetFound != null)
+                    OnTargetFound.Invoke();*/
+
     }
 
     override protected void OnTrackingLost()

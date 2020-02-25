@@ -5,15 +5,25 @@ using UnityEngine;
 public class Scene6 : MonoBehaviour
 {
     public GameObject boa;
+    public bool isBridgeFound, isBgFound, isSettingFinished;
     // Start is called before the first frame update
     void Start()
     {
+        isSettingFinished = false;
         boa.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isSettingFinished)
+        {
+            if (isBridgeFound)
+            {
+                boa_clear();
+            }
+        }
         
     }
 
@@ -27,5 +37,13 @@ public class Scene6 : MonoBehaviour
             boa.transform.localPosition = new Vector3((-0.4f+i*0.02f), -0.0636f, 0);
             yield return new WaitForSeconds(0.1f);
         }
+        isSettingFinished = true;
+        Debug.Log(isBridgeFound);
+    }
+
+    public void boa_clear()
+    {
+        boa.transform.localPosition += Vector3.right * Time.deltaTime;
+
     }
 }
