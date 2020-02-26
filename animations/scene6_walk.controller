@@ -30,9 +30,12 @@ AnimatorStateMachine:
     m_State: {fileID: -395034616529935865}
     m_Position: {x: 490, y: 120, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - serializedVersion: 1
     m_State: {fileID: 690981418147878870}
     m_Position: {x: 613.79663, y: 313.20142, z: 0}
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
   m_ChildStateMachines: []
@@ -111,7 +114,10 @@ AnimatorState:
   m_Transitions:
   - {fileID: -3225289482166897472}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2605233396168579213}
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
   m_StateMachineBehaviours: []
@@ -145,12 +151,15 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_Name: isSuccess
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
   m_AnimatorLayers:
@@ -166,6 +175,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1101 &318346115133885138
 AnimatorStateTransition:
@@ -240,6 +250,8 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!1101 &2206434995739960936
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -265,6 +277,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1101 &2605233396168579213
 AnimatorStateTransition:
@@ -319,6 +332,8 @@ AnimatorState:
   m_TimeParameter: 
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!1101 &7233440340027832564
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -341,6 +356,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1101 &7425271620648143248
 AnimatorStateTransition:
@@ -367,5 +383,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058

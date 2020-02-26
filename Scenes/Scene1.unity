@@ -121,6 +121,7 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &63355382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,13 +189,20 @@ GameObject:
 =======
 --- !u!43 &123566738
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+--- !u!43 &123566738
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: ImageTargetMesh49536
+=======
+  m_Name: ImageTargetMesh27262
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
   m_Name: ImageTargetMesh27262
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -344,7 +352,11 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Extent: {x: 0.5, y: 0, z: 0.34615478}
+=======
+    m_Extent: {x: 0.5, y: 0, z: 0.34615332}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
     m_Extent: {x: 0.5, y: 0, z: 0.34615332}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -358,6 +370,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &191825342
 GameObject:
@@ -495,6 +508,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!95 &244572409 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9500000, guid: a4b047ba24a6f374f9bbd3a5053e2b52,
@@ -580,7 +595,11 @@ Transform:
   m_GameObject: {fileID: 255013631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.015, y: 0.013, z: 0.143}
+=======
+  m_LocalPosition: {x: 0.226, y: 0.013, z: 0.035}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
   m_LocalPosition: {x: 0.226, y: 0.013, z: 0.035}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -603,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   target: {fileID: 255013635}
   boa: {fileID: 255013631}
   walk: {fileID: 244572409}
@@ -610,10 +630,15 @@ MonoBehaviour:
   isFound: 0
   hat: {fileID: 63355383}
 =======
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
   target: {fileID: 255013631}
   boa: {fileID: 0}
   walk: {fileID: 0}
   talking1Sound: {fileID: 8300000, guid: 6fb6d534eb4b57843a616d3102670fca, type: 3}
+<<<<<<< HEAD
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!1 &413001355
 GameObject:
@@ -733,7 +758,11 @@ PrefabInstance:
     - target: {fileID: 400006, guid: a4b047ba24a6f374f9bbd3a5053e2b52, type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.028
+=======
+      value: -0.261
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
       value: -0.261
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -745,7 +774,11 @@ PrefabInstance:
     - target: {fileID: 400006, guid: a4b047ba24a6f374f9bbd3a5053e2b52, type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.12
+=======
+      value: -0.215
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
       value: -0.215
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -795,12 +828,15 @@ Transform:
   m_PrefabInstance: {fileID: 486502407}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &486502409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400126, guid: a4b047ba24a6f374f9bbd3a5053e2b52,
     type: 3}
   m_PrefabInstance: {fileID: 486502407}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!1 &783694417
@@ -941,6 +977,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!21 &877611961
 Material:
@@ -1141,6 +1178,11 @@ PrefabInstance:
 PrefabInstance:
   m_ObjectHideFlags: 0
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+--- !u!1001 &1089775806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2119855514}
@@ -1152,7 +1194,11 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 6aefd9b8d8cb28f4f87b54d78bf0fca3, type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.21
+=======
+      value: -0.19857146
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
       value: -0.19857146
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1164,7 +1210,11 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 6aefd9b8d8cb28f4f87b54d78bf0fca3, type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.063
+=======
+      value: -0.0014288084
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
       value: -0.0014288084
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1204,7 +1254,11 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 6aefd9b8d8cb28f4f87b54d78bf0fca3, type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.3
+=======
+      value: 0.23809534
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
       value: 0.23809534
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1510,8 +1564,11 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f69c2044293fc40a066ff85ecb70df, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!21 &1196280667
 =======
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!4 &1308808015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 6cb4f5f750494f740a101f4c67f3f2c0,
@@ -1519,6 +1576,9 @@ Transform:
   m_PrefabInstance: {fileID: 1097700462}
   m_PrefabAsset: {fileID: 0}
 --- !u!21 &1397814945
+<<<<<<< HEAD
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 Material:
   serializedVersion: 6
@@ -1529,7 +1589,11 @@ Material:
   m_Name: 'scene1bgMaterial
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     49546'
+=======
+    27272'
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
     27272'
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1546,7 +1610,11 @@ Material:
     m_TexEnvs:
     - _MainTex:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: ca033b6c153e40d08dcfc4d866de96b0, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: e6db86a75b944d15a115d5ea00971131, type: 3}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
         m_Texture: {fileID: 2800000, guid: e6db86a75b944d15a115d5ea00971131, type: 3}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1556,12 +1624,15 @@ Material:
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1308808015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 6cb4f5f750494f740a101f4c67f3f2c0,
     type: 3}
   m_PrefabInstance: {fileID: 1097700462}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 --- !u!4 &1449185128 stripped
@@ -1617,9 +1688,13 @@ MonoBehaviour:
   boa: {fileID: 255013631}
   walk: {fileID: 244572409}
 <<<<<<< HEAD
+<<<<<<< HEAD
   isSet: 1
   isFound: 0
   hat: {fileID: 63355383}
+=======
+  talking1Sound: {fileID: 8300000, guid: 6fb6d534eb4b57843a616d3102670fca, type: 3}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
   talking1Sound: {fileID: 8300000, guid: 6fb6d534eb4b57843a616d3102670fca, type: 3}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1652,7 +1727,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119855508}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Mesh: {fileID: 163146231}
+=======
+  m_Mesh: {fileID: 123566738}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
   m_Mesh: {fileID: 123566738}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
@@ -1674,7 +1753,11 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1196280667}
+=======
+  - {fileID: 1397814945}
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
 =======
   - {fileID: 1397814945}
 >>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
