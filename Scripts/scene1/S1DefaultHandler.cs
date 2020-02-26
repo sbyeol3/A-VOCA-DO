@@ -8,36 +8,15 @@ using Vuforia;
 public class S1DefaultHandler : DefaultTrackableEventHandler
 {
     public S1MoveBoa s1move;
+
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
-        StartCoroutine(s1move.InitBoa());
-        /*        if (mTrackableBehaviour)
-                {
-                    Debug.Log("detect");
-                    var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
-                    var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
-                    var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
-
-                    // Enable rendering:
-                    foreach (var component in rendererComponents)
-                        component.enabled = true;
-
-                    // Enable colliders:
-                    foreach (var component in colliderComponents)
-                        component.enabled = true;
-
-                    // Enable canvas':
-                    foreach (var component in canvasComponents)
-                        component.enabled = true;
-
-                    StartCoroutine(s1move.InitBoa());
-                    Debug.Log("코루틴 종료");
-                }
-
-                if (OnTargetFound != null)
-                    OnTargetFound.Invoke();*/
-
+        if (s1move.isSet)
+        {
+            StartCoroutine(s1move.InitBoa());
+        }
+        
     }
 
     override protected void OnTrackingLost()
