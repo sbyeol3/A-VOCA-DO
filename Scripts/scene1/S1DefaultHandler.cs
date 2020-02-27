@@ -8,6 +8,20 @@ using Vuforia;
 public class S1DefaultHandler : DefaultTrackableEventHandler
 {
     public S1MoveBoa s1move;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    override protected void OnTrackingFound()
+    {
+        base.OnTrackingFound();
+        if (s1move.isSet)
+        {
+            StartCoroutine(s1move.InitBoa());
+        }
+        
+=======
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
     override protected void OnTrackingFound()
     {
         base.OnTrackingFound();
@@ -38,6 +52,10 @@ public class S1DefaultHandler : DefaultTrackableEventHandler
                 if (OnTargetFound != null)
                     OnTargetFound.Invoke();*/
 
+<<<<<<< HEAD
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
+=======
+>>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
     }
 
     override protected void OnTrackingLost()
