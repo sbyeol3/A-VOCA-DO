@@ -11,8 +11,8 @@
   - Vuforia Engine (for AR)
   - C# (IDE : Visual Studio 2019)
 
-![unity](./image/unity.png)
-![vuforia](./image/vuforia.png)
+![unity](./image/unity.png){: width="100" height="100"}
+![vuforia](./image/vuforia.png){: width="100" height="100"}
 
 
 ## Developer
