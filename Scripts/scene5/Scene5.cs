@@ -6,7 +6,7 @@ using UnityEngine;
 public class Scene5 : MonoBehaviour
 {
 
-    public GameObject boa, balloon, house, molly;
+    public GameObject boa, balloon, house, molly , environment;
     public static bool isBalloonFound, isBgFound, isSettingFinished = false, soundplayed = false, isBalloonOpened = false;
     public Animator walk, molly_walk;
     public AudioClip balloon_sound, thankyou;
@@ -28,7 +28,7 @@ public class Scene5 : MonoBehaviour
         boa.SetActive(false);
         balloon.SetActive(false);
         house.SetActive(false);
-
+        environment.SetActive(false);
     }
 
     // Update is called once per frame
@@ -95,6 +95,7 @@ public class Scene5 : MonoBehaviour
 
         Debug.Log("setting  ======  setting");
         isSettingFinished = true;
+        environment.SetActive(true);
         boa.SetActive(true);
         house.SetActive(true);
         boa.transform.localPosition = new Vector3(-0.118f, 0, -0.347f);

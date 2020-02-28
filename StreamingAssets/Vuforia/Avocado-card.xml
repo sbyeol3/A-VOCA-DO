@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="sceneA-1" size="0.250000 0.176776" />
+    <ImageTarget name="present" size="0.060000 0.066502" />
     <ImageTarget name="balloon" size="0.060000 0.066502" />
     <ImageTarget name="hat" size="0.060000 0.066502" />
     <ImageTarget name="bridge" size="0.060000 0.066502" />
