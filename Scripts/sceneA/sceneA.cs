@@ -6,8 +6,10 @@ public class sceneA : MonoBehaviour
 {
     public GameObject boa;
     public GameObject present;
+    //public GameObject nextbtn;
     public Animator walk;
     public Animator jump;
+
 
     public Material[] facial;
     public SkinnedMeshRenderer face;
@@ -17,6 +19,7 @@ public class sceneA : MonoBehaviour
 
     void Awake()
     {
+        //nextbtn.SetActive(false);
         boa.transform.Rotate(0f, -180f, 0f);
         present.SetActive(false);
         face.material = facial[0];
@@ -62,6 +65,7 @@ public class sceneA : MonoBehaviour
         present.SetActive(true);
         present.transform.localPosition = new Vector3(0.8826f, -1.731f, -1.7793f);
         face.material = facial[1];
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1.0f);
+        //nextbtn.SetActive(true);
     }
 }
