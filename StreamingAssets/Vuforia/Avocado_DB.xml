@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="scene5test" size="0.200000 0.140762" />
+    <ImageTarget name="scene2test" size="0.200000 0.140320" />
     <ImageTarget name="scene6test" size="0.200000 0.141485" />
     <ImageTarget name="scene6bg2" size="0.200000 0.141250" />
     <ImageTarget name="sceneA1bg" size="0.250000 0.176823" />
