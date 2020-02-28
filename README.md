@@ -11,7 +11,7 @@
   - Vuforia Engine (for AR)
   - C# (IDE : Visual Studio 2019)
 
-![unity](./image/unity.png)
+![unity](./image/unity.png =100*100)
 ![vuforia](./image/vuforia.png)
 
 
