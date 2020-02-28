@@ -5,47 +5,54 @@ using UnityEngine;
 public class S1MoveBoa : MonoBehaviour
 {
     public Transform target;
-    private float speed = 10.0f;
-    private Vector3 tarPos = new Vector3(0.27f, 0.18f, -0.03f);
-    private Vector3 closet = new Vector3(0.273f, 0.18f, -0.16f);
+    public GameObject boa;
+    public Animator walk;
 
     private AudioSource audioFile;
-    public AudioClip talking1Sound; // 보아가 말하는 소리
+    public bool isSet = true;
+    public bool isFound = false;
+    public GameObject hat;
 
 
     void Awake()
     {
-        target.transform.position = new Vector3(-0.28f, 0.18f, -0.03f); // pos 초기화
+        hat.SetActive(false);
     }
 
-    void Start()
-    {
-
-       
-    }
-
-    void Update()
-    {
-        
-    }
 
     public IEnumerator InitBoa()
     {
+        boa.SetActive(true);
+        isSet = false;
+        target.transform.localPosition = new Vector3(-0.015f, 0.013f, -0.0138f); // pos 초기화
+        Debug.Log("초기화");
+        Debug.Log(boa.transform.localPosition);
         this.audioFile = this.gameObject.AddComponent<AudioSource>();
-        this.audioFile.clip = this.talking1Sound;
+        //this.audioFile.clip = this.example;
         this.audioFile.loop = false;
 
-        transform.position = Vector3.Lerp(transform.position, tarPos, speed * Time.deltaTime);
-        Debug.Log("AWAKE");
-        StartCoroutine("MoveToCloset");
-        yield return new WaitForSeconds(0.1f);
+        walk.SetBool("isWalk", true);
+        for (int i = 0;i < 95; i++){
+            boa.transform.localPosition = boa.transform.localPosition + new Vector3(0.004f, 0, 0f);
+            Debug.Log(boa.transform.localPosition);
+            yield return new WaitForSeconds(0.1f);
+        }
+        walk.SetBool("isWalk", false);
+        yield return new WaitForSeconds(3.0f);
+        StartCoroutine("Mission");
     }
 
-    public IEnumerator MoveToCloset() // 신발장으로 이동
+    public IEnumerator Mission() // 현관으로 이동하기
     {
-        Debug.Log("Move");
-        transform.position = Vector3.Lerp(transform.position, closet, speed * Time.deltaTime);
-        this.audioFile.Play();
-        yield return new WaitForSeconds(0.1f);
+        this.audioFile.Play(); // 안경을 줘~
+        yield return new WaitForSeconds(2.0f);
+        
+    }
+
+    public IEnumerator PutHatOn() // 모자
+    {
+        isFound = true;
+        hat.SetActive(true);
+        yield return new WaitForSeconds(2.0f);
     }
 }
