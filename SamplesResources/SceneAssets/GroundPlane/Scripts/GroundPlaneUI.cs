@@ -85,6 +85,7 @@ public class GroundPlaneUI : MonoBehaviour
             }
             else if (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.PLACEMENT)
             {
+                //여기부터 이제 그 내용 스타트 시키면 됨
                 this.instructions.text = (this.productPlacement.IsPlaced) ?
                     "• Touch and drag to move Chair" +
                     "\n• Two fingers to rotate" +
