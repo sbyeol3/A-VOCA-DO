@@ -13,7 +13,7 @@
 
 ![unity](./image/unity.png)
 ![vuforia](./image/vuforia.png)
-
+<img src="./image/unity.png"  width="100" height="100">
 
 ## Developer
   - SaetByeol Ahn
