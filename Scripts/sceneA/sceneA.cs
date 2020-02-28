@@ -7,6 +7,7 @@ public class sceneA : MonoBehaviour
     public GameObject boa;
     public GameObject present;
     public GameObject nextbtn;
+    public GameObject stopbtn;
     public Animator walk;
     public Animator jump;
 
@@ -20,6 +21,7 @@ public class sceneA : MonoBehaviour
     void Awake()
     {
         nextbtn.SetActive(false);
+        stopbtn.SetActive(false);
         boa.transform.Rotate(0f, -180f, 0f);
         present.SetActive(false);
         face.material = facial[0];
@@ -67,5 +69,6 @@ public class sceneA : MonoBehaviour
         face.material = facial[1];
         yield return new WaitForSeconds(1.0f);
         nextbtn.SetActive(true);
+        stopbtn.SetActive(true);
     }
 }
