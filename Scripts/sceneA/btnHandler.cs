@@ -25,11 +25,11 @@ public class btnHandler : MonoBehaviour, IVirtualButtonEventHandler
     public void OnButtonPressed(VirtualButtonBehaviour vb) // 버튼 눌렀을 때
     {
         Debug.Log("Press");
-        ChangeNextScene();
+        //ChangeNextScene();
     }
 
     public void ChangeNextScene()
     {
-        SceneManager.LoadScene("Start");
+        //SceneManager.LoadScene("Start");
     }
 }

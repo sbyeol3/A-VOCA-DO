@@ -11,6 +11,10 @@
   - Vuforia Engine (for AR)
   - C# (IDE : Visual Studio 2019)
 
+![unity](./image/unity.png)
+![vuforia](./image/vuforia.png)
+
+
 ## Developer
   - SaetByeol Ahn
   - SooMin Lee
