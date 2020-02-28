@@ -5,8 +5,9 @@ Sounds/
 Suriyun/
 BigFurniturePack/
 NaturePackLite/
+*.meta
 Sounds/*.mp3
 Turntable_platforms/
 
 *.mp3
-*.meta
+
