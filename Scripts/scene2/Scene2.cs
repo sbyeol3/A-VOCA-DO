@@ -7,7 +7,7 @@ namespace DigitalRuby.RainMaker
     public class Scene2 : MonoBehaviour
     {
 
-        public GameObject boa ,umbrella;
+        public GameObject boa ,umbrella, environment;
         public static bool isUmbrellaFound, isBgFound, isSettingFinished = false, soundplayed = false, isUmbrellaOpened = false;
         public Animator walk;
         public AudioClip unbrella, thankyou;
@@ -28,6 +28,7 @@ namespace DigitalRuby.RainMaker
             walk.SetBool("isWalk", false);
             boa.SetActive(false);
             umbrella.SetActive(false);
+            environment.SetActive(false);
 
         }
 
@@ -85,6 +86,7 @@ namespace DigitalRuby.RainMaker
 
             Debug.Log("setting  ======  setting");
             isSettingFinished = true;
+            environment.SetActive(true);
             boa.SetActive(true);
             boa.transform.localPosition = new Vector3(-0.4f, -0.0636f, 0);
             walk.SetBool("isWalk", true);

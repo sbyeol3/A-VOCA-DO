@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Scene6 : MonoBehaviour
 {
-    public GameObject boa, bridge;
+    public GameObject boa, bridge, environment;
     public static bool isBridgeFound, isBgFound, isSettingFinished = false, soundplayed =false, isClearFinished = false;
     public Animator walk;
     public AudioClip bridgeSound, thankyou;
@@ -18,6 +18,7 @@ public class Scene6 : MonoBehaviour
         walk.SetBool("isWalk", false);
         boa.SetActive(false);
         bridge.SetActive(false);
+        environment.SetActive(false);
 
     }
 
@@ -51,6 +52,7 @@ public class Scene6 : MonoBehaviour
         Debug.Log("setting  ======  setting");
         isSettingFinished = true;
         boa.SetActive(true);
+        environment.SetActive(true);
         boa.transform.localPosition = new Vector3(-0.4f,-0.0636f,0);
         walk.SetBool("isWalk", true);
         for (int i = 0; i < 10; i++)
