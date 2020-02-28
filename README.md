@@ -1,5 +1,11 @@
 # :avocado: A-VOCA-DO : AR based Game application
 
+## Application Explaination
+  - significance : Increase educational effectiveness by increasing children's interest by using AR games.
+  - target : 4-5 year-old children who study English
+
+![start1](./image/start1.png)
+
 ## Development Environment
   - Unity3D 2.17f1
   - Vuforia Engine (for AR)
@@ -10,24 +16,19 @@
   - SooMin Lee
   
 ## Platform
-  - Mobile : Android
+  - Mobile : Android ( standard resolution : Galaxy S10)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Asset
 
 ```
-Cartoon PalmTree and Umbrella
-Suriyun
-BigFurniturePack
-NaturePackLite
-Butterfly (Animated)
-RainMaker
+Baker House/
+Bed & Bath Furniture Pack/
+BigFurniturePack/
+Butterfly (Animated)/
+Cartoon PalmTree and Umbrella/
+Five Seamless Tileable Ground Textures/
+NaturePackLite/
+RainMaker/
+Suriyun/
 ````
-=======
-## Asset
->>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
-=======
-## Asset
->>>>>>> f81a3061b4667ec574610a429b4af4e4882a4058
