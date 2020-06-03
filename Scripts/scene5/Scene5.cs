@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Scene5 : MonoBehaviour
 {
 
     public GameObject boa, balloon, house, molly , environment;
-    public static bool isBalloonFound, isBgFound, isSettingFinished = false, soundplayed = false, isBalloonOpened = false;
+    public static bool isBalloonFound, isBgFound, isWrongFound=false, isSettingFinished = false, isSettingStarted = false, soundplayed = false, isBalloonOpened = false, noText;
     public Animator walk, molly_walk;
-    public AudioClip balloon_sound, thankyou;
+    public AudioClip balloon_sound, thankyou, molly_sound;
     public AudioSource boa_sound;
     public SkinnedMeshRenderer boa_face;
     public Material[] boa_faces;
-
+    public Text showCard;
+    public Button Stop;
+    public Image askFinish;
     // Start is called before the first frame update
 
 
@@ -29,22 +32,50 @@ public class Scene5 : MonoBehaviour
         balloon.SetActive(false);
         house.SetActive(false);
         environment.SetActive(false);
+        showCard.gameObject.SetActive(false);
+        Stop.gameObject.SetActive(false);
+        askFinish.gameObject.SetActive(false);
+        isBalloonFound = false;
+        isBgFound = false;
+        isSettingFinished = false;
+        isSettingStarted = false;
+        soundplayed = false;
+        isBalloonOpened = false;
+        noText = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (isSettingFinished)
+        if (noText)
+        {
+            showCard.gameObject.SetActive(false);
+        }
+        if (isSettingStarted)
         {
             if (isBalloonFound)
             {
-
+                showCard.gameObject.SetActive(false);
                 boa_clear();
                 if (!isBalloonOpened)
                 {
                     StartCoroutine(balloon_open());
                     isBalloonOpened = true;
+                }
+            }
+            else
+            {
+                if (isWrongFound)
+                {
+                    showCard.gameObject.SetActive(false);
+                }
+                else
+                {
+                    if (isSettingFinished)
+                    {
+                        showCard.gameObject.SetActive(true);
+                    }
                 }
             }
         }
@@ -59,7 +90,7 @@ public class Scene5 : MonoBehaviour
 
 
     }
-
+    
     public IEnumerator balloon_open()
     {
 
@@ -79,6 +110,7 @@ public class Scene5 : MonoBehaviour
         molly.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         molly_walk.SetBool("isWalk", true);
+        boa_sound.PlayOneShot(molly_sound);
         for (int i = 0; i < 60; i++)
         {
             molly.transform.localPosition = new Vector3(0.014f+i*0.0007f, 0, 0.184f - i*0.0058f);
@@ -86,6 +118,8 @@ public class Scene5 : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         molly_walk.SetBool("isWalk", false);
+        yield return new WaitForSeconds(8f);
+        finished();     //끝!
     }
 
 
@@ -94,7 +128,7 @@ public class Scene5 : MonoBehaviour
     {
 
         Debug.Log("setting  ======  setting");
-        isSettingFinished = true;
+        isSettingStarted = true;
         environment.SetActive(true);
         boa.SetActive(true);
         house.SetActive(true);
@@ -112,7 +146,8 @@ public class Scene5 : MonoBehaviour
             boa.transform.rotation = Quaternion.Euler(0, 18 * (i + 1), 0);
             yield return new WaitForSeconds(0.05f);
         }
-        //boa_sound.PlayOneShot(bridge);
+        isSettingFinished = true;
+        boa_sound.PlayOneShot(balloon_sound);
     }
 
     public void boa_clear()
@@ -125,5 +160,25 @@ public class Scene5 : MonoBehaviour
             boa_sound.PlayOneShot(thankyou);
             soundplayed = true;
         }
+    }
+
+    public void finished()
+    {
+        Stop.gameObject.SetActive(true);
+    }
+
+    public void AskExit()
+    {
+        askFinish.gameObject.SetActive(true);
+    }
+
+    public void NoExit()
+    {
+        askFinish.gameObject.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

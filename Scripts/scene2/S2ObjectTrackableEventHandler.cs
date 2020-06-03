@@ -15,6 +15,7 @@ namespace DigitalRuby.RainMaker
         {
             base.OnTrackingFound();
             Scene2.isUmbrellaFound = true;
+            Scene2.noText = true;
             //scene6.boa_clear();
             Debug.Log("clear");
 
