@@ -1,20 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class sceneA : MonoBehaviour
 {
-    public GameObject boa;
-    public GameObject present;
-    public GameObject nextbtn;
-    public GameObject stopbtn;
+    public GameObject boa, present;
+    public GameObject nextbtn, stopbtn, missionText;
     public Animator walk;
     public Animator jump;
 
-
     public Material[] facial;
     public SkinnedMeshRenderer face;
+    public AudioSource nar;
+    public AudioClip startAudio, endAudio;
+    public bool isPlayedStart, isPlayedEnd = false;
 
+    public Image askFinish;
     public bool giveMission = false;
     public bool isCalled = false;
 
@@ -24,6 +26,8 @@ public class sceneA : MonoBehaviour
         stopbtn.SetActive(false);
         boa.transform.Rotate(0f, -180f, 0f);
         present.SetActive(false);
+        missionText.SetActive(false);
+        askFinish.gameObject.SetActive(false);
         face.material = facial[0];
     }
 
@@ -31,7 +35,7 @@ public class sceneA : MonoBehaviour
     {
         isCalled = true;
         boa.transform.localPosition = new Vector3(0.378f, 0.19f, -0.992f); // init boa's position
-        boa.transform.Rotate(0f, 239.693f, 0f);
+        boa.transform.Rotate(0f, 190.693f, 0f);
         jump.SetBool("isJump", true);
         yield return new WaitForSeconds(0.8f);
         jump.SetBool("isJump", false);
@@ -56,19 +60,43 @@ public class sceneA : MonoBehaviour
     public IEnumerator GiveMission()
     {
         giveMission = true;
-        //오디오 파일 재생 "present를 주ㅓ"
+        missionText.SetActive(true);
+        if (!isPlayedStart)
+        {
+            nar.PlayOneShot(startAudio);
+            isPlayedStart = true;
+        }
         yield return new WaitForSeconds(0.3f);
     }
 
 
     public IEnumerator Mission()
     {
-        // 오디오파일 재생 "고마워"
+        missionText.SetActive(false);
+        if (!isPlayedEnd)
+        {
+            nar.PlayOneShot(endAudio);
+            isPlayedEnd = true;
+        }
         present.SetActive(true);
-        present.transform.localPosition = new Vector3(0.8826f, -1.731f, -1.7793f);
+        //present.transform.localPosition = new Vector3(-0.5f, 0.06f, -0.5f);
         face.material = facial[1];
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(5.0f);
         nextbtn.SetActive(true);
         stopbtn.SetActive(true);
+    }
+    public void AskExit()
+    {
+        askFinish.gameObject.SetActive(true);
+    }
+
+    public void NoExit()
+    {
+        askFinish.gameObject.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

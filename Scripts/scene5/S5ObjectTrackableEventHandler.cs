@@ -13,6 +13,7 @@ public class S5ObjectTrackableEventHandler : DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
         Scene5.isBalloonFound = true;
+        Scene5.noText = true;
         //scene6.boa_clear();
         Debug.Log("clear");
 

@@ -13,6 +13,7 @@ public class ObjectTrackableEventHandler : DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
         Scene6.isBridgeFound = true;
+        Scene6.noText = true;
         //scene6.boa_clear();
         Debug.Log("clear");
         

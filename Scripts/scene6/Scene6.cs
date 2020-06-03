@@ -1,37 +1,74 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scene6 : MonoBehaviour
 {
     public GameObject boa, bridge, environment;
-    public static bool isBridgeFound, isBgFound, isSettingFinished = false, soundplayed =false, isClearFinished = false;
+    public static bool isBridgeFound, isBgFound, isWrongFound = false, isSettingStarted = false, isSettingFinished = false, soundplayed =false, isClearFinished = false, noText;
     public Animator walk;
     public AudioClip bridgeSound, thankyou;
     public AudioSource boa_sound;
+    public Text showCard;
+    public Button Next, Stop;
+    public Image askFinish;
     // Start is called before the first frame update
 
 
-    
+
     void Start()
     {
         walk.SetBool("isWalk", false);
         boa.SetActive(false);
         bridge.SetActive(false);
         environment.SetActive(false);
+        Next.gameObject.SetActive(false);
+        Stop.gameObject.SetActive(false);
+        showCard.gameObject.SetActive(false);
+        askFinish.gameObject.SetActive(false);
+        isBridgeFound = false;
+        isBgFound = false;
+        isSettingStarted = false;
+        isSettingFinished = false;
+        soundplayed = false;
+        isClearFinished = false;
+        noText = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (isSettingFinished)
+        if (noText)
         {
+            showCard.gameObject.SetActive(false);
+        }
+        if (isSettingStarted)
+        {
+            if (isClearFinished)
+            {
+                showCard.gameObject.SetActive(false);
+            }
             if (isBridgeFound && !isClearFinished)
             {
+                showCard.gameObject.SetActive(false);
                 StartCoroutine(boa_clear());
                 isClearFinished = true;
+            }
+            else
+            {
+                if (isWrongFound)
+                {
+                    showCard.gameObject.SetActive(false);
+                }
+                else
+                {
+                    if (isSettingFinished)
+                    {
+                        showCard.gameObject.SetActive(true);
+                    }
+                }
             }
         }
         else
@@ -50,7 +87,7 @@ public class Scene6 : MonoBehaviour
     {
         
         Debug.Log("setting  ======  setting");
-        isSettingFinished = true;
+        isSettingStarted = true;
         boa.SetActive(true);
         environment.SetActive(true);
         boa.transform.localPosition = new Vector3(-0.4f,-0.0636f,0);
@@ -67,6 +104,7 @@ public class Scene6 : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         boa_sound.PlayOneShot(bridgeSound);
+        isSettingFinished = true;
     }
 
     public IEnumerator boa_clear()
@@ -116,6 +154,27 @@ public class Scene6 : MonoBehaviour
             yield return new WaitForSeconds(0.07f);
         }
         walk.SetBool("isWalk", false);
+        finished();
         
+    }
+    public void finished()
+    {
+        Next.gameObject.SetActive(true);
+        Stop.gameObject.SetActive(true);
+    }
+
+    public void AskExit()
+    {
+        askFinish.gameObject.SetActive(true);
+    }
+
+    public void NoExit()
+    {
+        askFinish.gameObject.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

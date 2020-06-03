@@ -20,6 +20,6 @@ public class aDefaultHandler : DefaultTrackableEventHandler
 
     override protected void OnTrackingLost()
     {
-        //base.onTrackingLost();
+        base.OnTrackingLost();
     }
 }

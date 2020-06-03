@@ -5,19 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneManage : MonoBehaviour
 {
-    public void ChangeaTo1Scene()
+    public static Scene[] scenes;
+
+    public void ChangeScene(int index)
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Scene"+index);
     }
 
-    public void Change1To2Scene()
+    public void ChangeFirst()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Scene0");
     }
 
     public void ChangeStopScene()
     {
         SceneManager.LoadScene("Start");
+    }
+    public void ChangeHowToScene()
+    {
+        SceneManager.LoadScene("HowTo");
     }
 
 }

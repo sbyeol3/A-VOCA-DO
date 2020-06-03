@@ -5,12 +5,12 @@ using UnityEngine;
 public class CardDefaultHandler : DefaultTrackableEventHandler
 {
     public S1MoveBoa s1move;
-
     override protected void OnTrackingFound()
     {
-        if (!s1move.isFound)
+        Debug.Log(S1MoveBoa.givenMission);
+        if (S1MoveBoa.givenMission)
         {
-            StartCoroutine("PutHatOn");
+            StartCoroutine(s1move.PutHatOn());
         }
         
     }
