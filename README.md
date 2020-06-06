@@ -1,15 +1,15 @@
 # :avocado: A-VOCA-DO : AR based Educational Application
 
 ## Application Explaination
-  - target : 4-5 year-old children who study English
-  - purpose : Develop educational applications that enable interactive communication with learners using AR that interacts with real images in real time
+  - __target__ : 4-5 year-old children who study English
+  - __purpose__ : Develop educational applications that enable interactive communication with learners using AR that interacts with real images in real time
   
-  - expected effectiveness
+  - __expected effectiveness__
     - Strengthen learners' ability to infer context through storytelling methods
     - Generate interest from learners by visualizing real-time interactions with characters
     - Reduce the resistance of the Alpha generation, who are more familiar with digital devices, to paper books
     
-  - potential for development
+  - __potential for development__
     - Extension to customized learning applications with different languages and stages of development
     - Make stories with a variety of endings at the learner's choice
     - Competitiveness in line with the era of online untact culture and education
