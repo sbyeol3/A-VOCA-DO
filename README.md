@@ -1,22 +1,22 @@
 # :avocado: A-VOCA-DO : AR based Educational Application
 
-## Application Explaination
-  - __target__ : 4-5 year-old children who study English
-  - __purpose__ : Develop educational applications that enable interactive communication with learners using AR that interacts with real images in real time
+## 어플리케이션 설명
+  - __타겟 유저__ : 영어를 배우고 있는 5-6살 아이
+  - __개발 목적__ : 현실의 이미지와 실시간으로 인터랙션이 가능한 AR의 기술을 활용하여 학습자와 상호작용할 수 있는 교육용 어플리케이션 개발
   
-  - __expected effectiveness__
-    - Strengthen learners' ability to infer context through storytelling methods
-    - Generate interest from learners by visualizing real-time interactions with characters
-    - Reduce the resistance of the Alpha generation, who are more familiar with digital devices, to paper books
+  - __기대 효과__
+    - 스토리텔링 방식으로 학습에 맥락성을 부여함으로써 학습자의 맥락 유추능력 강화
+    - 어플리케이션 내 캐릭터와의 실시간 인터랙션을 시각화하여 학습자의 흥미 유발
+    - 디지털 기기가 더욱 친숙한 알파세대가 종이책에 느끼는 거부감 감소
     
-  - __potential for development__
-    - Extension to customized learning applications with different languages and stages of development
-    - Make stories with a variety of endings at the learner's choice
-    - Competitiveness in line with the era of online untact culture and education
+  - __발전 가능성__
+    - 다양한 언어 및 발달단계에 따른 맞춤형 학습 어플리케이션으로 확대
+    - 학습자의 선택에 따라 다양한 결말이 나오는 스토리로 확장
+    - 언택트 문화와 교육의 온라인화 시대에 발맞추어 경쟁력 확보
 
 ![start1](./image/start1.png)
 
-## Development Environment
+## 개발환경
   - Unity3D 2.17f1
   - Vuforia Engine
   - AR core
@@ -25,14 +25,13 @@
 <img src="./image/unity.png"  width="100" height="100">
 <img src="./image/vuforia.png"  width="148" height="100">
 
+## 플랫폼
+  - Android (standard resolution : Galaxy S10)
+
 ## Developer
   - SaetByeol Ahn
   - SooMin Lee
   
-## Platform
-  - Mobile : Android (standard resolution : Galaxy S10)
-
-
 ## Asset
 
 ```
