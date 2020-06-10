@@ -25,8 +25,7 @@
   - AR core
   - C# (IDE : Visual Studio 2019)
 
-<img src="./image/unity.png"  width="100" height="100">
-<img src="./image/vuforia.png"  width="148" height="100">
+<img src="./image/stack.png"  width="100%">
 
 ## Platform
   - Android (standard resolution : Galaxy S10)
@@ -48,3 +47,7 @@ NaturePackLite/
 RainMaker/
 Suriyun/
 ````
+
+## Copyright
+> image : Flaticon kawaii png <br>
+> fonts : 메이플스토리 무료폰트
