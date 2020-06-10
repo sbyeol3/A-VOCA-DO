@@ -1,5 +1,6 @@
 # :avocado: A-VOCA-DO : AR based Educational Application
-> 이화여자대학교 캡스톤디자인프로젝트 팀 2. Litchi
+> 이화여자대학교 캡스톤디자인프로젝트 팀 2. Litchi <br>
+> 시연영상 [Link!](https://youtu.be/PW1_Xr0CeE4)
 
 
 ## 어플리케이션 설명 📄
