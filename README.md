@@ -1,6 +1,8 @@
 # :avocado: A-VOCA-DO : AR based Educational Application
+> 이화여자대학교 캡스톤디자인프로젝트 팀 2. Litchi
 
-## 어플리케이션 설명
+
+## 어플리케이션 설명 :paper
   - __타겟 유저__ : 영어를 배우고 있는 5-6살 아이
   - __개발 목적__ : 현실의 이미지와 실시간으로 인터랙션이 가능한 AR의 기술을 활용하여 학습자와 상호작용할 수 있는 교육용 어플리케이션 개발
   
@@ -29,8 +31,8 @@
   - Android (standard resolution : Galaxy S10)
 
 ## Developer
-  - SaetByeol Ahn
-  - SooMin Lee
+  - [SaetByeol Ahn](https://github.com/sbyeol3) 
+  - [SooMin Lee](https://github.com/vilut1002)
   
 ## Asset
 
