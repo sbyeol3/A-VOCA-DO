@@ -1,6 +1,6 @@
 # :avocado: A-VOCA-DO : AR based Educational Application
-> 이화여자대학교 캡스톤디자인프로젝트 졸업프로젝트 최우수상 <br>
-> 디벨롭 후 제8회 실감콘텐츠 K-해커톤 수상
+> 2020 이화여자대학교 캡스톤디자인프로젝트 졸업프로젝트 최우수상 <br>
+> 2020 제8회 실감콘텐츠 K-해커톤 한국컴퓨터정보학회장상 수상 <br>
 > 시연영상 [Link!](https://youtu.be/PW1_Xr0CeE4)
 
 
